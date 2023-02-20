@@ -1,0 +1,5 @@
+In this code, we define an Item struct that represents the data we want to expose through the API. We then create a slice of Item values, and add some example items to it.
+
+We define two route handlers using the http.HandleFunc function. The first route handler, /items, returns the list of items as JSON when a GET request is made. The second route handler, /items/add, accepts a new item in the request body and adds it to the slice when a POST request is made.
+
+Finally, we start the server by calling http.ListenAndServe and passing in nil as the handler. This causes the default router to be used, which routes requests to the registered route handlers.
